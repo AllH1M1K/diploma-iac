@@ -24,7 +24,7 @@ resource "yandex_compute_instance" "web" {
   }
 
   metadata = {
-    ssh-keys = "ubuntu:${file("C:/Users/Dmitry/.ssh/id_ed25519.pub")}"
+    ssh-keys = "ubuntu:${file("id_ed25519.pub")}"
 
     user-data = <<-EOF
     #cloud-config
