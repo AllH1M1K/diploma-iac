@@ -26,3 +26,6 @@ jobs:
 
       - name: Terraform Validate
         run: terraform validate
+
+      - name: Run tfsec
+        uses: aquasecurity/tfsec-action@v1.0.3
